@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://img.freepik.com/premium-vector/shopping-cart-icon-symbols-shopping-trolley-grocery-push-cart-sale-discount-online-shopping-digital-marketing-concept-3d-vector-isolated-illustration-design-cartoon-pastel-minimal-style_734013-319.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #4168c4;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #c0d2fa;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #dfe5f5;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #0b369c;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>Shop-now!</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Place order</a></li>
+      <li><a href="#">Browse</a></li>
+      <li><a href="file:///C:/Users/Rayven/Pictures/Saved%20Pictures/index.htm
+">More info</a></li>
+      <li><a href="#">Report a problem</a></li>
+      <li><a href="file:///C:/Users/Rayven/Pictures/Saved%20Pictures/indo.htm">Log in or Sign up</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>About shop now:</h1>
+    <p>Shop now is an online shop which sells old or unwanted belongings, and you can also sell things, so what are you waiting for? download now! </p>
+    <p>We respect your privacy and decision :))</p>
+
+<p id="demo" style="display:none">We use cookies for your safety</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+    
+  </article>
+</section>
+
+<footer>
+  <li><a href="#">Download the app now</a></li>
+</footer>
+
+</body>
+</html>
